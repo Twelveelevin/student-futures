@@ -1,0 +1,410 @@
+* {
+    box-sizing: border-box;
+  }
+
+/* COLOR variables*/
+:root{
+    --primary:#aedbeb;
+    --secondary:#8dcde4;
+    --Botton:#f3ac6c;
+    --Botton1:#86bd3e;
+    --font:#412525;
+}
+
+/*reset*/
+body,p,a,ul,li{
+    margin:0;
+    padding:0;
+    text-decoration:none;
+    
+}
+
+li{
+    list-style-type:none;
+    
+}
+
+  /* Styling navigation */
+
+.nav-logo img{
+    width:100px;
+    margin-right: auto;
+    margin-left: auto;
+    display:block;
+}
+
+.side-bar-icon{
+  display: none;
+}
+.nav-link{
+  text-align: center;
+  background-color:var(--secondary);
+  padding:10px;
+  margin-bottom:20px;
+}
+
+
+.nav-link ul li a{
+  color: #333;
+  font-size: 16px;
+}
+.nav-link ul li a:hover{
+    color: #fff;
+}
+.nav-link li{
+    display: inline;
+    margin:50px;
+
+}
+
+.nav-link .title-header{
+  display:none;
+} 
+
+.banner_header{
+    text-align:center
+}
+.banner_header h1{
+    color:orange;
+    font-size: 80px;  
+    text-shadow: 5px 5px  5px var(--secondary);
+
+}
+.banner_header h3{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  
+
+}
+span{
+  color:orange;
+}
+
+
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color:  #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column p{
+    padding-bottom:20px;
+  }
+
+ /*this code controls the width of each individual element  */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  .column img{
+    filter:brightness(70%);
+    border-radius:3px;
+    box-shadow: 4px 4px  4px 4px rgb(241, 228, 228);
+
+  }
+  .column li{
+    line-height: 20px;
+    padding:10px;
+  }
+
+  .column img:hover{
+    filter:brightness(100%);
+  }
+
+  /* Clear floats after the columns */
+  .row-1:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+ /* Section2 content starts here*/
+ .container-1{
+  padding: 30px;
+
+ }
+ .container-1{
+  padding: 30px;
+
+ }
+ .banner-header-container-header {
+  border-radius: 5px;
+  background-color:  #f2f2f2;
+  padding: 10px 0 0 ;
+  margin-top: 20px;
+}
+
+
+
+ .container-1 a{
+  color: #333;
+  font-size: 12px;
+}
+
+.container-1 h2{
+  text-shadow: 2px 2px grey;
+  color:orange;
+
+}
+
+
+
+
+.banner-header-1{
+  padding-top:20px;
+}
+
+.container-1 h4{
+  padding: 30px 0 10px 0; 
+  border-bottom: 1.5px solid orange;
+}
+
+.container-1 .fa {
+  color:orange;
+  padding: 0 10px;
+}
+
+.banner-header-container-content{
+  display:none;
+}
+
+.banner-header-container-header:hover .banner-header-container-content{
+    display: block;
+}
+
+
+.content-link {
+    margin-top:30px;
+    margin-bottom:30px;
+    margin-right:500px;
+}
+
+.content-link h5{
+    background-color:orange;
+    padding:10px;
+    margin-bottom:30px;     
+}
+.content-link h5:hover{
+   color:white;     
+}
+
+.content-video iframe{
+    padding-right:10px;
+}
+
+
+
+
+
+
+
+  /* Section3 content starts here*/
+
+.banner-header h3{
+    margin-left : 30px;
+    text-shadow: 2px 2px grey;
+    padding-top:20px;
+}
+
+.banner-content{
+    margin-left: 30px;
+    padding-bottom:40px;
+}
+.banner-content li{
+    line-height:30px;  
+    margin-left: 30px;
+
+}
+
+.banner-content .fa{
+    padding-right:10px;  
+    color:orange;
+}
+
+.banner-content .fa:hover{  
+   transform: translateY(-5px);
+
+}
+
+ 
+
+ /* ***************** FOOTER SECTION************* */
+.footer-section{
+  padding: 50px 10px;
+  background-color: #333;
+}
+.footer-section .footer-item .title-header{
+  color: orange;
+  border-bottom: 2px solid orange;
+}
+.footer-section .footer-item .title-header h1{
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.footer-section .footer-item ul{
+  margin-top: 20px;
+}
+.footer-section .footer-item ul li{
+  color:#fff;
+  margin: 10px 0px;
+}
+.social-handles i{
+  color: #fff;
+  font-size: 22px;
+  margin: 0px 10px;
+}
+.social-handles i:hover{
+  color:orange;
+  transform: translateY(-5px);
+}
+.footer-bottom{
+  text-align: center;
+  color: #fff;
+  padding: 30px 0px;
+  background-color: rgb(37, 37, 37);
+}
+.footer-bottom span{
+  color: orange;
+}
+
+
+
+ @media screen and (max-width: 767px){
+
+
+  .banner_header span{
+    font-size:50px;  
+    text-shadow: 5px 5px  5px var(--secondary);
+  }
+
+}
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px){
+    .column, input[type=submit]  {
+      width: 100%;
+      margin-top: 0;
+    }
+
+    .content-link{
+      width: 80%;
+      margin-top:10px;
+      margin-bottom:10px;
+      margin-left:30px;
+
+    }
+
+    .nav-link li{
+        display: inline;
+        margin:40px;
+        padding:20px;
+    
+    }
+
+    .side-bar-icon{
+      top: 40px;
+      right: 10px;
+      display: block;
+      position: absolute;
+  }
+  ul li a{
+    color: #333;
+  }
+  ul li a:hover{
+    color:white;
+  
+  }
+  .side-bar-nav-link{
+    display:none;
+    position:relative;
+    min-width:140px;
+    text-align:center;
+    background-color:var(--secondary);
+    box-shadow: 0px 8px 16px 0px grey;
+    border-radius:5px;
+    float:left;
+    margin-top: 20px;
+    margin-left:20px;
+  }
+
+  .side-bar-nav-link li {
+    padding :12px 16px;
+    
+  
+
+  }
+
+  .side-bar-icon:hover .side-bar-nav-link{
+    display:block;
+    color:white;
+  }
+
+  }
+
+
+
+  @media only screen and (max-width: 567px){
+
+    /* ********** mobile sidebar navigation*** */
+      .navigation .nav-link{
+      top: 0px;
+      left: 0px;
+      z-index: 10;
+      position: fixed;
+      background-color: #fff;
+    }
+    .nav-link .dark-skin{
+      height: 100vh;
+      width: 100%;
+      z-index: 10;
+      position: fixed;
+      display: none;
+      background-color: rgba(51, 51, 51, 0.651);
+    }
+    .nav-link ul{
+      left: -75%;
+      padding: 0px;
+      margin: 0px;
+      width: 70%;
+      z-index: 15;
+      height: 100vh;
+      position: fixed;
+      text-align: left;
+      transition: all 0.3s ease;
+      background-color: #fff;
+    }
+    .nav-link ul li{
+      padding: 10px;
+      margin: 0px 0px;
+      display: block;
+    }
+    .nav-link .title-header{
+      display: block;
+      padding: 20px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #ccc;
+    }
+    .nav-link .title-header h3{
+      font-size: 16px;
+    }
+    .nav-link .title-header h3 span{
+      color: orange;
+    }
+    .nav-link .title-header i{
+      color: orange;
+      padding: 10px;
+    }
+    .banner_header span{
+      font-size:30px;  
+      text-shadow: 5px 5px  5px var(--secondary);
+    }
+   }
+
+ 

@@ -1,0 +1,471 @@
+body{
+    background-color: #fff;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* COLOR variables*/
+:root{
+    --primary:#aedbeb;
+    --secondary:#8dcde4;
+    --Botton:#f3ac6c;
+    --Botton1:#86bd3e;
+    --font:#412525;
+}
+
+
+/*reset*/
+body,p,a,ul,li{
+    margin:0;
+    padding:0;
+    text-decoration:none;
+    
+}
+
+li{
+    list-style-type:none;
+}
+
+/*FONTS*/
+h1,h3{
+    font-size:1.2em;   
+}
+
+h2{
+    font-size:1.6em;
+}
+h4{
+    font-size:1.6em;
+}
+input{
+    padding:4px;
+    border-radius:20px;
+    border:2px solid var(--Botton);
+}
+
+
+
+/*NAVIGATION SECTION===================================================*/
+
+.navigation{
+    width: 100%;
+    display: block;
+    position: relative;
+}
+.nav-logo {
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+.nav-logo img{
+    width: 100px;
+}
+.nav-link {
+    width: 100%;
+}
+.nav-link ul{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    text-align: center;
+    background-color: var(--secondary);
+}
+.nav-link ul li{
+    padding: 10px;
+    margin: 0px 20px;
+    display: inline-block;
+}
+.nav-link ul li a{
+    color: #333;
+    font-size: 16px;
+}
+.nav-link ul li a:hover{
+    color: #fff;
+}
+.side-bar-icon{
+    display: none;
+}
+.side-bar-icon i{
+    font-size: 22px;
+}
+
+.nav-link .title-header{
+  display:none;
+} 
+
+@media screen and (max-width: 567px){
+.navigation{
+    border-bottom: 1px solid #ccc;
+}
+.side-bar-icon{
+    top: 40px;
+    right: 10px;
+    display: block;
+    position: absolute;
+}
+  /* ********** mobile sidebar navigation*** */
+  .navigation .nav-link{
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    position: fixed;
+    background-color: #fff;
+  }
+  .nav-link .dark-skin{
+    height: 100vh;
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+    display: none;
+    background-color: rgba(51, 51, 51, 0.651);
+  }
+  .nav-link ul{
+    left: -75%;
+    padding: 0px;
+    margin: 0px;
+    width: 70%;
+    z-index: 15;
+    height: 100vh;
+    position: fixed;
+    text-align: left;
+    transition: all 0.3s ease;
+    background-color: #fff;
+  }
+  .nav-link ul li{
+    padding: 10px;
+    margin: 0px 0px;
+    display: block;
+  }
+  .nav-link .title-header{
+    display: block;
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+  }
+  .nav-link .title-header h3{
+    font-size: 16px;
+  }
+  .nav-link .title-header h3 span{
+    color: orange;
+  }
+  .nav-link .title-header i{
+    color: orange;
+    padding: 10px;
+  }
+
+
+  
+    
+}
+/* *************** faq sectiON ***********/
+
+.banner_header{
+    text-align:center;
+    margin: 50px 0px;
+}
+.banner_header h1 span{
+  color:orange;
+  font-size: 80px;  
+  text-shadow: 5px 5px  5px var(--secondary);
+}
+.link-btn-anchor{
+    width: 100%;
+}
+.link-btn-anchor a{
+    text-align: center;
+    font-size: 14px;
+}
+.faqs-container{
+    padding: 10px;
+}
+  /* Style inputs */
+  input[type=text],[type=email],[type=password], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid white;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  /* this works on the submit button */
+  
+  input[type=submit] {
+    color: #fff;
+    padding: 10px 30px;
+    background-color: orange;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  /* this works on the button hover effect */
+  
+  input[type=submit]:hover {
+    color: orange;
+    background-color: transparent;
+    border: 2px solid orange;
+  }
+
+
+
+  @media screen and (max-width: 567px){
+    .banner_header h1 span{
+      color:orange;
+      font-size: 40px;  
+      text-shadow: 5px 5px  5px var(--secondary);
+    }
+  }
+  
+  /* Style the container/contact section */
+  /* .container {
+    border-radius: 5px;
+    background-color:  #f2f2f2;
+    padding: 10px;
+  } */
+  
+  /* Create two columns that float next to eachother */
+  .column p{
+    padding-bottom:20px;
+
+  }
+
+ /*this code controls the width of each individual element  */
+ .column a{
+    color:orange;
+
+ }
+ .column a:hover{
+    color: var(--secondary);
+    transform: translateY(-5px);
+    
+ }
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  .column img{
+    filter:brightness(70%);
+  }
+
+  .column img:hover{
+    filter:brightness(100%);
+  }
+
+  /* Clear floats after the columns */
+  .row-2{
+    width:300px;
+    height:550px;
+    border-radius: 10px;
+    background-color: var(--secondary);
+    margin:auto;
+    margin-top: 50px;
+
+  }
+  .row-2 img{
+    width:10px;
+    padding:20px;
+    box-sizing: border-box;
+    margin-right:10px;
+  } 
+
+  .row-2 a{
+    background-color:orange;
+    color:white;
+    display: block;
+    text-align: center;
+    margin: 10px 20px;
+    padding:10px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    
+  }
+
+  .row-2 a i{
+    padding-right: 10px;
+  }
+
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+@media screen and (max-width: 767px){
+    .column {
+        float: none;
+        width: 100%;
+        margin-top: 6px;
+        padding: 20px;
+        margin-bottom: 50px;
+      }
+      .input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+      }
+      .column img{
+        width: 100%;
+      }
+}
+  /*=====================section-5- container=======================*/
+
+  .section-5-container{
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+    background-color: rgb(234, 234, 234);
+}
+.section-5-container .form-image img{
+    width: 100%;
+}
+.section-5-container .form-image, 
+.section-5-container .form-inline{
+    width: 50%;
+}
+.section-5-container .form-inline{
+    padding-left: 20px;
+}
+.section-5-container .form-inline .title-header{
+   margin-bottom: 20px 0px;
+}
+.section-5-container .form-inline .title-header h3{
+    font-size: 30px;
+ }
+.section-5-container .form-inline .form-group{
+    width: 90%;
+    margin: 20px 0px;
+}
+.section-5-container .form-inline input.input{
+    padding: 10px;
+    border-radius: 0px;
+}
+.section-5-container .form-inline input.input:focus{
+    box-shadow: none;
+    border: 1px solid orange;
+}
+.section-5-container .form-inline button{
+    width: 90%;
+    border: 0px;
+    padding: 15px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    background-color: orange;
+}
+.section-5-container .form-inline button:hover{
+    color: #fff;
+    background-color: var(--secondary);
+}
+@media screen and (max-width: 767px){
+    .section-5-container .form-image{
+        display: none;
+    }
+    .section-5-container .form-inline{
+        width: 100%;
+        padding: 10px;
+    }
+    .section-5-container .form-inline .form-group{
+        width: 100%;
+    }
+}
+
+
+
+
+ /* ***************** FOOTER SECTION************* */
+.footer-section{
+  padding: 50px 10px;
+  background-color: #333;
+}
+.footer-section .footer-item .title-header{
+  color: orange;
+  border-bottom: 2px solid orange;
+}
+.footer-section .footer-item .title-header h1{
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.footer-section .footer-item ul{
+  margin-top: 20px;
+}
+.footer-section .footer-item ul li{
+  color:#fff;
+  margin: 10px 0px;
+}
+.social-handles i{
+  color: #fff;
+  font-size: 22px;
+  margin: 0px 10px;
+}
+.social-handles i:hover{
+  color:orange;
+  transform: translateY(-5px);
+}
+.footer-bottom{
+  text-align: center;
+  color: #fff;
+  padding: 30px 0px;
+  background-color: rgb(37, 37, 37);
+}
+.footer-bottom span{
+  color: orange;
+}
+
+
+
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .nav-link li{
+        display: inline;
+        margin:40px;
+        padding:20px;
+    
+    }
+    .side-bar-icon{
+      top: 40px;
+      right: 10px;
+      display: block;
+      position: absolute;
+  }
+    ul li a{
+        color: #333;
+    }
+    ul li a:hover{
+        color:white;
+    
+    }
+  .side-bar-nav-link{
+    display:none;
+    position:relative;
+    min-width:140px;
+    text-align:center;
+    background-color:var(--secondary);
+    box-shadow: 0px 8px 16px 0px grey;
+    border-radius:5px;
+    float:left;
+    margin-top: 20px;
+    margin-left:20px;
+  }
+
+  .side-bar-nav-link li {
+    padding :12px 16px;
+  }
+
+  .side-bar-icon:hover .side-bar-nav-link{
+    display:block;
+    color:white;
+  }
+
+    .section-5-container .form-image img{
+        display:none;
+    }
+        .section-5-container h3{
+            width:100%;
+    }
+
+
+  }

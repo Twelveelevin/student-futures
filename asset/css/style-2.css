@@ -1,0 +1,313 @@
+/* ************ BUILDING MOBILE RESPONSIVENESS ************ */
+
+@media only screen and (max-width: 567px){
+
+
+    .banner img{
+        height:100%;
+    }
+
+    .banner-img {
+        height:100%;
+        filter: brightness(70%);
+    }
+
+   
+    .banner .title-header h1{
+        color: #fff;
+        font-size: 20px;
+        text-align: center;
+        text-decoration:underline ;
+        text-decoration-color: var(--Botton1);
+       
+    }
+    .banner .title-header h3{
+        font-size: 15px;
+    }
+    
+    .banner-body p{
+        width: 80%;
+        font-size: 15px;
+    }
+
+
+}
+
+@media screen and (max-width:960px){
+
+    
+    .banner img{
+        height:100%;
+    }
+
+    .banner-img {
+        height:100%;
+        filter: brightness(70%);
+    }
+
+    .banner .title-header h3{
+        font-size: 15px;
+    }
+    
+    .banner-body p{
+        width: 80%;
+        font-size: 18px;
+    }
+
+}
+
+
+
+
+
+
+
+/* ************ SECTION 3 SECTION ************ */
+.section-3{
+    margin: 100px 20px;
+    border: 3px solid #ccc;
+    padding:10px;
+
+
+}
+.section-3-container .title-header h2{
+    text-align: center;
+    margin: 30px 0px;
+}
+.section-item{
+    width: 100%;
+    margin-bottom: 50px;
+    border: 5px solid #ccc;
+}
+.section-item .section-img{
+    width: 100%;
+}
+.section-item .section-img img{
+    width: 100%;
+}
+.section-font{
+    background-color: var(--Botton1);
+}
+.section-font h3{
+    font-size: 13px;
+    margin: 0px;
+    padding:10px;
+    text-align: center;
+}
+
+
+
+
+/* ************ SECTION 4 SECTION ************ */
+
+.section-4{
+    margin: 100px 20px;
+    border: 3px solid #ccc;
+    padding:10px;
+}
+
+.section-4-container .title-header h3{
+    text-align: center;
+    margin: 30px 0px;
+  
+}
+.section-4-container .title-header h2{
+    text-align: center;
+    margin: 20px 0px;
+  
+}
+
+.section-item{
+    width: 100%;
+    margin-bottom: 50px;
+    border: 5px solid #ccc;
+}
+.section-font{
+    text-align: center;
+}
+
+.section-font p{
+    text-align: center;
+    padding:10px;    
+}
+
+.section-font .button{
+    margin:10px;
+   
+      
+}
+
+
+
+
+
+/* ************ SECTION 5 ************ */
+.section-5{
+    
+}
+.form-inline{
+    
+}
+  .form-inline button {
+    padding: 10px 10px;
+    cursor: pointer;
+  }
+
+
+
+/* ************ BUILDING MOBILE RESPONSIVENESS ************ */
+
+
+  @media (max-width: 960px) {
+    .form-inline input {
+      margin: 10px 0;
+    }
+    
+    .form-inline {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+
+  }
+
+
+
+/* footer styling==================================================================*/
+.footer-section{
+    padding: 100px 0 10px;
+    background-color: var(--secondary);
+    margin-top:20px;
+ 
+
+}
+.footer-row{
+    width:95%;
+    margin: 0 auto;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+
+
+.footer-left, .footer-center,.footer-right{
+    flex-basis:33.3%;
+    padding:10px;
+    margin-bottom:20px;
+
+}
+.footer-right{
+    text-align:right;
+}
+
+.footer-left{
+    text-align:left;
+}
+
+.copywrite{
+    padding-top:10px;
+    text-align:center;
+    font-weight:bold;
+}
+.social-handles{
+    text-align:center;
+
+}
+.social-handles i {
+    display:inline-flex;
+    margin:10px;
+    color:rgb(62, 60, 60);
+}
+
+
+.social-handles i:hover{
+    color:white;
+    transform: translateY(-7px);
+
+}
+
+
+@media only screen and (max-width: 567px){
+    .footer-section{
+        display:block;
+    }
+    .footer-row{
+        text-align:center;
+        width:50%;
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:960px){
+
+    .footer-section { 
+        background-color: var(--secondary);
+        position:absolute;   
+    }
+
+
+    .footer-section.contact{
+        text-align:inline-flex;
+
+    }
+    div{
+        display:inline-flex;
+    }
+
+    .contact{
+        display: inline-flex;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+.footer-section { 
+    background-color: var(--secondary);
+    margin-top: 100px;
+    padding:0px;
+    text-align:center;
+   
+    
+}
+.footer-section div{
+    padding:10px 10px;
+    
+
+}
+
+.footer-section h1{
+    font-weight: bold;
+    
+    
+}
+
+*/
